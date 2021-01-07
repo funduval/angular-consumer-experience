@@ -1,0 +1,31 @@
+{
+  "name": "holidayfancam",
+  "title": "Coca Cola Holiday Fancam",
+  "image": "https://creator.vivoom.co/assets/ed3aac3700c8302dac5becdf07674764/fullsize.jpg",
+  "url": "https://holidayfancam.vivoom.co",
+  "primary": "#fe001a",
+  "secondary": "#fe001a",
+  "version": "201811.28.67866",
+  "index": "index,follow",
+  "assets": {
+    "landing-4-3": "https://creator.vivoom.co/assets/ab4c629106e78584c3cef03cc42d84fa/fullsize.jpg",
+    "landing-3-4": "https://creator.vivoom.co/assets/8996a2f14cd79945ad0122c539e334cb/fullsize.jpg",
+    "landing-16-9": "https://creator.vivoom.co/assets/df2f2958b5e60c5d730b7e7fdd468ed3/fullsize.jpg",
+    "landing-9-16": "https://creator.vivoom.co/assets/f321c72470363aa492b38e64c12bac65/fullsize.jpg",
+    "video-select-4-3": "https://creator.vivoom.co/assets/68ff7f166bb324f33a97faa6b50c0311/fullsize.jpg",
+    "video-select-3-4": "https://creator.vivoom.co/assets/4fab90c99a0a253866e7add60acebb8a/fullsize.jpg",
+    "video-select-16-9": "https://creator.vivoom.co/assets/14907734a951eb916645c6675b5da410/fullsize.jpg",
+    "video-select-9-16": "https://creator.vivoom.co/assets/61c9ae7af326b06ed39c88fb699174e7/fullsize.jpg",
+    "uploading-4-3": "https://creator.vivoom.co/assets/6eaba2e73015ccdb713da2956726dcbf/fullsize.jpg",
+    "uploading-3-4": "https://creator.vivoom.co/assets/0d2292c8ff7dcc500f9d4bd0fc8bb703/fullsize.jpg",
+    "uploading-16-9": "https://creator.vivoom.co/assets/831910377026672515b3371eeeecc546/fullsize.jpg",
+    "uploading-9-16": "https://creator.vivoom.co/assets/ab217673a510963d275abfaac3dfdea6/fullsize.jpg",
+    "contact-info-background": "https://creator.vivoom.co/assets/df68947f34af88a7bf7e1eb07d400521/fullsize.jpg",
+    "sharing-background-mine": "https://creator.vivoom.co/assets/30604000044cbd19c5db489ef75e86b7/fullsize.jpg",
+    "sharing-background-feed": "https://creator.vivoom.co/assets/20b5d31850847484d086d5a84d429815/fullsize.jpg",
+    "player-background-landscape": "theme-background-landscape.jpg",
+    "player-background-portrait": "theme-background-portrait.jpg",
+    "player-background": "player-background.jpg",
+    "gallery-background": "gallery-background.jpg"
+  }
+}

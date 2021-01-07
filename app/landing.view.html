@@ -1,0 +1,36 @@
+<div
+  data-ng-include="'underage.view.html'"
+  data-ng-if="landing.preventContentCreation()"
+></div>
+<div class="landing landing-background">
+  <div
+    class="landing_title_container"
+    data-ng-if="landing.title || landing.question"
+  >
+    <div class="landing_title">{{ landing.title }}</div>
+    <div class="landing_question">{{ landing.question }}</div>
+  </div>
+
+  <nav class="nav-buttons" data-ng-if="!landing.preventContentCreation()">
+    <button
+      class="halo-btn"
+      data-ng-if="!landing.hideFeed"
+      data-ng-click="landing.gallery()"
+      tabindex="0"
+    >
+      <div class="content">
+        <i class="fa fa-th-large"></i> <label>GALLERY</label>
+      </div>
+    </button>
+    <button
+      class="halo-btn"
+      data-ng-hide="landing.hideCreate"
+      data-ng-click="landing.create(true)"
+      tabindex="0"
+    >
+      <div class="content">
+        <i class="fa fa-video-camera"></i> <label>CREATE</label>
+      </div>
+    </button>
+  </nav>
+</div>

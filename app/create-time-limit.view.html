@@ -1,0 +1,35 @@
+<div class="create-time-limit" data-ng-click="!isDesktop() && $close()">
+  <header data-ng-if="!isDesktop()">
+    <span id="port-only">TURN PHONE SIDEWAYS TO LANDSCAPE MODE,</span>
+    <span>RECORD 15 SECONDS OR LESS.</span>
+  </header>
+  <header data-ng-if="isDesktop()">
+    <span>DESKTOP SUPPORT IS LIMITED TO FILE UPLOAD.</span>
+    <span>SCAN THIS QR CODE TO RECORD WITH YOUR PHONE.</span>
+  </header>
+  <qrcode ng-if="isDesktop()" href="campaign.desktopQRCodeUri"></qrcode>
+  <nav class="create-time-limit_nav-buttons">
+    <button
+      class="halo-btn"
+      tabindex="0"
+      data-ng-if="isDesktop()"
+      data-ng-click="$dismiss()"
+    >
+      <div class="content">
+        <i class="fa fa-close"></i>
+        <div>CANCEL</div>
+      </div>
+    </button>
+    <button
+      class="halo-btn"
+      tabindex="0"
+      aria-label="OK"
+      data-ng-click="continue()"
+    >
+      <div class="content">
+        <i class="fa fa-check"></i>
+        <div data-ng-if="isDesktop()">CONTINUE</div>
+      </div>
+    </button>
+  </nav>
+</div>

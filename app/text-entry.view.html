@@ -1,0 +1,52 @@
+<div class="text-entry-content">
+  <div class="text-entry__misconfiguration" data-ng-if="!creator.textEntry">
+    Text entry is not properly configured
+  </div>
+  <div class="text-entry-title">{{ creator.textEntry.title }}</div>
+  <div class="text-entry-fields">
+    <div
+      class="text-entry-field"
+      data-ng-repeat="field in creator.textEntry.fields"
+    >
+      <div class="text-entry-field__display-name">{{ field.displayName }}</div>
+      <input
+        class="text-entry-field__input"
+        type="text"
+        data-ng-model="field.value"
+        data-ng-model-options="{getterSetter: true}"
+      />
+      <div
+        class="text-entry-field__error"
+        data-ng-class="{'invisible': !field.error()}"
+      >
+        <i class="fa fa-warning"></i><span>{{ field.errorDescription }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+<img class="official-logo" src="./coke-logo.png" alt="coke-logo" />
+
+<nav class="nav-buttons">
+  <button
+    class="halo-btn"
+    data-ng-click="creator.goBack()"
+    tabindex="0"
+    data-ng-if="creator.enableBackForTextEntry"
+  >
+    <div class="content">
+      <i class="fa fa-chevron-left"></i>
+      <div>BACK</div>
+    </div>
+  </button>
+  <button
+    class="halo-btn"
+    data-ng-click="creator.nextFromTextEntry()"
+    tabindex="0"
+    data-ng-if="creator.textEntry.ready()"
+  >
+    <div class="content">
+      <i class="fa fa-chevron-right"></i>
+      <div>NEXT</div>
+    </div>
+  </button>
+</nav>

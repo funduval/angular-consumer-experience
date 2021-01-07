@@ -1,0 +1,126 @@
+<div class="contact-info-backdrop"></div>
+<div class="contact-info">
+  <div>
+    <span class="header">{{ contact.title }}</span>
+  </div>
+  <div>
+    <span class="subtitle">{{ contact.subtitle }}</span>
+  </div>
+
+  <form name="demographics.demographicsForm" data-ng-submit="contact.submit()">
+    <div class="form-group">
+      <div class="line" data-ng-if="contact.request.fields.name">
+        <div class="name">
+          <label>First Name</label>
+          <div class="input-group first" show-errors>
+            <input
+              class="form-control"
+              type="text"
+              name="first"
+              data-ng-model="contact.first"
+              placeholder="First"
+              ng-required="contact.request.fields.name === 'required'"
+            />
+            <i class="form-control-feedback fa fa-warning"></i>
+          </div>
+        </div>
+        <div class="lastname">
+          <label>Last Name</label>
+          <div class="input-group first last" show-errors>
+            <input
+              class="form-control"
+              type="text"
+              name="last"
+              data-ng-model="contact.last"
+              placeholder="Last"
+              ng-required="contact.request.fields.name === 'required'"
+            />
+            <i class="form-control-feedback fa fa-warning"></i>
+          </div>
+        </div>
+      </div>
+      <div class="line" data-ng-if="contact.request.fields.email">
+        <div class="email">
+          <label>Email</label>
+          <div class="input-group first" show-errors>
+            <input
+              class="form-control"
+              type="email"
+              name="email"
+              data-ng-model="contact.contest_email"
+              placeholder="some@email.com"
+              ng-required="contact.request.fields.email === 'required'"
+            />
+            <i class="form-control-feedback fa fa-warning"></i>
+          </div>
+        </div>
+      </div>
+      <div class="line" data-ng-if="contact.request.fields.venue">
+        <div class="venue">
+          <label>Venue</label>
+          <div class="input-group first">
+            <select
+              name="venue"
+              class="form-control"
+              ng-required="contact.request.fields.venue === 'required'"
+              ng-options="venue.displayName for venue in contact.request.extras.availableVenues"
+              ng-model="contact.selectedVenue"
+            >
+              <option value="" data-ng-if="!contact.selectedVenue"
+                >Select Location</option
+              >
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-buttons small-screen-landscape-hide">
+      <div
+        class="halo-btn"
+        data-ng-click="contact.dismiss()"
+        data-ng-hide="contact.request.hideSkip"
+      >
+        <div class="content">
+          <i class="fa fa-close"></i>
+          <div>SKIP</div>
+        </div>
+      </div>
+      <div class="halo-btn" data-ng-click="contact.submit()">
+        <div class="content">
+          <i class="fa fa-chevron-right"></i>
+          <div>SUBMIT</div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <!-- <div class="disclaimer" ng-bind-html="contact.disclaimer"></div> -->
+  <div class="manual-disclaimer">
+    Privacy Policy and Terms:
+    <a href="https://us.coca-cola.com/privacy-policy/" target="_blank">
+      https://us.coca-cola.com/privacy-policy/</a
+    >
+  </div>
+
+  <div class="small-screen-landscape-show">
+    <div class="nav-buttons-scrollable">
+      <div
+        class="halo-btn"
+        data-ng-click="contact.dismiss()"
+        data-ng-hide="contact.request.hideSkip"
+      >
+        <div class="content">
+          <i class="fa fa-close"></i>
+          <div>SKIP</div>
+        </div>
+      </div>
+      <div class="halo-btn" data-ng-click="contact.submit()">
+        <div class="content">
+          <i class="fa fa-chevron-right"></i>
+          <div>SUBMIT</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

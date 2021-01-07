@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "BebasNeue Bold 2";
+  src: url("./fonts/BebasNeue Bold 2.ttf");
+}
+
+.text-entry-content {
+  padding-top: 3%;
+
+  background: url(./holiday-coke.jpg) 50% / cover no-repeat;
+  color: white;
+  font-family: "BebasNeue Bold 2";
+  text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+  font-size: 1.5em;
+}
+.official-logo {
+  width: 16.67%;
+  position: absolute;
+  top: 2%;
+  right: 42.67%;
+}
+#share-link {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+  font-size: 1.5em;
+  text-align: center;
+
+  a {
+    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em white;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  body > div.modal.fade.modal-fullscreen.in > div > div > div > nav {
+    display: none;
+  }
+
+  .create-content {
+    .video-share.video-container {
+      .shareable {
+        .share__title-perk-container {
+          min-height: unset;
+        }
+      }
+    }
+  }
+
+  .official-logo {
+    width: 33.33%;
+    position: absolute;
+    top: 2%;
+    right: 33.33%;
+  }
+
+  .text-entry-title {
+    margin-top: -42%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .share-link-container {
+    margin-top: 1%;
+    padding-left: 10px;
+  }
+  #port-only {
+    display: none;
+  }
+}
+
+@media all and (min-device-width: 1024px) and (orientation: landscape) {
+  .official-logo {
+    top: 1%;
+  }
+}
+
+@media all and (min-device-width: 768px) and (orientation: portrait) {
+  .official-logo {
+    top: 1%;
+  }
+}

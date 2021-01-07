@@ -1,0 +1,98 @@
+{
+  "feed": "aegholidayfancam",
+  "defaultState": "root.landing",
+  "requireUserName": false,
+  "browserHistory": false,
+  "loginType": "simple",
+  "hideFeed": false,
+  "hideGalleryHeader": false,
+  "hideCreate": false,
+  "selectThemeFirst": false,
+  "hideLanding": false,
+  "requestContactInfo": {
+    "enabled": true,
+    "version": null,
+    "accessText": "EXCLUSIVE OFFERS",
+    "title": "Thanks for being a star of L.A. LIVE's Holiday Fancam!",
+    "subtitle": "Enter your email below for exclusive offers from Coca-Cola!",
+    "disclaimer": "Privacy Policy and Terms:  https://us.coca-cola.com/privacy-policy/",
+    "hideSkip": false,
+    "fields": {
+      "email": "required",
+      "name": "required"
+    }
+  },
+  "textEntry": {
+    "title": "INCLUDE YOUR NAME IN THE GREETING:",
+    "fields": [
+      {
+        "id": "name",
+        "displayName": "FROM:",
+        "regex": "^[a-zA-Z\\s]{1,20}$",
+        "errorDescription": "Name must contain letters only and have less than 20 characters"
+      }
+    ]
+  },
+  "themes": [
+    {
+      "name": "AEG Holiday Fancam",
+      "hero_image": null,
+      "preset": {
+        "id": "232f7a8c15a1f00908025ab9b4c00d63121b4a1b",
+        "name": "AEG Holiday Fancam",
+        "strength": 1,
+        "brightness": 0,
+        "contrast": 0,
+        "autofix": 0
+      }
+    }
+  ],
+  "sharing": {
+    "default": {
+      "mine": {
+        "title": "SHARE YOUR HOLIDAY GREETING!",
+        "perk": null,
+        "generic": {
+          "text": "#{url}"
+        },
+        "facebook": {
+          "hashtag": "#HolidayFancam"
+        },
+        "twitter": {
+          "text": "Check out my Holiday Greeting from L.A. LIVE! #{url}",
+          "hashtags": "HolidayFancam"
+        },
+        "sms": {
+          "text": "Check out my Holiday Greeting from L.A. LIVE! #{url}"
+        },
+        "email": {
+          "subject": "Check out my Holiday Greeting from L.A. LIVE! #{url}",
+          "body": "Check out my Holiday Greeting! #{url}"
+        }
+      },
+      "feed": {
+        "title": "SHARE YOUR HOLIDAY GREETING!",
+        "perk": null,
+        "generic": {
+          "text": "#{url}"
+        },
+        "facebook": {
+          "hashtag": "#HolidayFancam"
+        },
+        "twitter": {
+          "text": "Check out this Holiday Greeting from L.A. LIVE! #{url}",
+          "hashtags": "HolidayFancam"
+        },
+        "sms": {
+          "text": "Check out this Holiday Greeting from L.A. LIVE! #{url}"
+        },
+        "email": {
+          "subject": "Check out this Holiday Greeting from L.A. LIVE! #{url}",
+          "body": "Check out this Holiday Greeting from L.A. LIVE! #{url}"
+        }
+      }
+    }
+  },
+  "id": "holidayfancam",
+  "name": "holidayfancam"
+}
